@@ -10,5 +10,5 @@ NodeJS koa2 project template
 
 ## Init
 
-`curl -s https://github.com/trawor/template-node-koa/raw/master/get.sh | bash`
+`curl -sSL https://github.com/trawor/template-node-koa/raw/master/get.sh | bash`
 
