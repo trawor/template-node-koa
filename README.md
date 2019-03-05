@@ -8,7 +8,23 @@ NodeJS koa2 project template
 - Exception handle
 - Dockerfile within
 
-## Init and startup
+## Init
 
 `bash <(curl -sSL https://github.com/trawor/template-node-koa/raw/master/get.sh)`
 
+## Start
+Just add .js file to `router/`, like:
+
+```javascript
+const router = require('koa-router')({
+  prefix: 'api',
+});
+
+module.exports = router;
+
+router.get('/test', async (ctx) => {
+  ctx.body = {
+    msg: 'ok',
+  };
+});
+```
