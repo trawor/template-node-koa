@@ -5,16 +5,14 @@ SRC_ZIP="https://github.com/trawor/${TEMPLATE_NAME}/archive/master.zip"
 TMP_PATH="/tmp/template-download"
 
 # Project Prepare
+PRJ_NAME="test-template-node-koa"
+
 read -rp "Project Name(lowercase-without-space): " PRJ
 if [ -n "$PRJ" ]; then
   PRJ_NAME=$(echo "$PRJ" | tr "[:upper:]" "[:lower:]")
-else
-  PRJ_NAME="test-template-node-koa"
 fi
 
 PRJ_PATH="$PWD/$PRJ_NAME"
-
-
 
 
 echo "> Create $PRJ to $PRJ_PATH"
