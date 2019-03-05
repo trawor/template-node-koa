@@ -8,7 +8,7 @@ NodeJS koa2 project template
 - Exception handle
 - Dockerfile within
 
-## Init
+## Init and startup
 
-`curl -sSL https://github.com/trawor/template-node-koa/raw/master/get.sh | bash`
+`bash <(curl -sSL https://github.com/trawor/template-node-koa/raw/master/get.sh)`
 

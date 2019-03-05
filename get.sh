@@ -37,7 +37,8 @@ ls -lA "$PRJ_PATH"
 sed -i -e "s/.*\"name\":.*/  \"name\": \"$PRJ_NAME\",/" "$PRJ_PATH/package.json"
 cd "$PRJ_PATH"
 npm install --production
-echo "OK, your turn now :) how about 'npm start'"
+echo "> Success! Project path: $PRJ_PATH"
+echo "> OK, your turn now :) how about 'npm start'"
 
 # Clean
 rm "$PRJ_PATH/package.json-e"
