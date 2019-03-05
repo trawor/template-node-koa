@@ -35,6 +35,12 @@ mv -v "${TMP_PATH}/${TEMPLATE_NAME}-master" "$PRJ_PATH"
 # Init
 ls -lA "$PRJ_PATH"
 sed -i -e "s/.*\"name\":.*/  \"name\": \"$PRJ_NAME\",/" "$PRJ_PATH/package.json"
+cd "$PRJ_PATH"
+npm install --production
+echo "OK, your turn now :) how about 'npm start'"
 
 # Clean
+rm "$PRJ_PATH/package.json-e"
+rm "$PRJ_PATH/get.sh"
+
 rm -rf "$TMP_PATH"
